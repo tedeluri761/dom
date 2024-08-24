@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="backgrondcolor">
+      <div class="h1span">
+        <h1>
+          SPLI
+          <span> TTER </span>
+        </h1>
+      </div>
+      <main>
+        <section class="inputP">
+          <p>Bill</p>
+          <input type="text" class="iconofdollar" id="firsinput" />
+        </section>
+
+        <section class="selectipconteiner">
+          <p>Select Tip %</p>
+          <div class="numbersconteiner">
+            <button
+              onclick="handleButtonClick5(), handleButtonClickcolor()"
+              id="numbersofpercent"
+              class="numbersofpercent"
+            >
+              5%
+            </button>
+            <button
+              onclick="handleButtonClick10(), handleButtonClickcolor()"
+              id="numbersofpercent"
+              class="numbersofpercent"
+            >
+              10%
+            </button>
+            <button
+              onclick="handleButtonClick15(), handleButtonClickcolor()"
+              id="numbersofpercent"
+              class="numbersofpercent"
+            >
+              15%
+            </button>
+            <button
+              onclick="handleButtonClick25(), handleButtonClickcolor()"
+              id="numbersofpercent"
+              class="numbersofpercent"
+            >
+              25%
+            </button>
+            <button
+              onclick="handleButtonClick50(), handleButtonClickcolor()"
+              id="numbersofpercent"
+              class="numbersofpercent"
+            >
+              50%
+            </button>
+            <div>
+              <input class="costum" id="costum" placeholder="Custom" />
+            </div>
+          </div>
+        </section>
+
+        <section class="inputP">
+          <p>Number of People</p>
+          <input
+            type="number"
+            id="numberofpeople"
+            class="iconofdollar iconofpeople"
+          />
+        </section>
+
+        <footer>
+          <div>
+            <div class="rowdiv">
+              <div class="amountconteiner">
+                <p class="tipamount">Tip Amount</p>
+                <p>/ person</p>
+              </div>
+              <div class="dolllarr" id="dolllarr"></div>
+            </div>
+            <div class="rowdiv">
+              <div class="amountconteiner">
+                <p class="tipamount">Total</p>
+                <p>/ person</p>
+              </div>
+              <p class="dolllarr" id="dolllarr2"></p>
+            </div>
+          </div>
+
+          <button class="reset" id="reset" onclick="reseted()">RESET</button>
+        </footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
